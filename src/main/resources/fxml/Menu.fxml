@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="600.0" spacing="25.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.franckyi.cmpdl.controller.MenuController">
+   <children>
+      <VBox styleClass="bg-primary">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="CMPDL">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Roboto Bold" size="36.0" />
+               </font>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Curse Modpack Downloader">
+               <font>
+                  <Font name="Roboto Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <JFXButton buttonType="RAISED" onAction="#actionImportURL" prefWidth="400.0" styleClass="btn-text-primary" text="FROM MODPACK URL">
+         <font>
+            <Font name="Roboto" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <graphic>
+            <MaterialDesignIconView glyphName="CLOUD_DOWNLOAD" size="24" wrappingWidth="30.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" onAction="#actionImportID" prefWidth="400.0" styleClass="btn-text-primary" text="FROM MODPACK ID">
+         <font>
+            <Font name="Roboto" size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <graphic>
+            <MaterialDesignIconView glyphName="BRIEFCASE_DOWNLOAD" size="24" wrappingWidth="30.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" onAction="#actionImportFile" prefWidth="400.0" styleClass="btn-text-primary" text="FROM MODPACK FILE">
+         <font>
+            <Font name="Roboto" size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <graphic>
+            <FontAwesomeIconView glyphName="DOWNLOAD" size="24" wrappingWidth="30.0" />
+         </graphic>
+      </JFXButton>
+      <HBox>
+         <children>
+            <JFXButton buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#actionAbout" prefWidth="300.0" styleClass="btn-outline-secondary" text="ABOUT">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="50.0" right="25.0" />
+               </HBox.margin>
+               <graphic>
+                  <MaterialDesignIconView glyphName="INFORMATION_OUTLINE" size="24" wrappingWidth="30.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#actionClose" prefWidth="300.0" styleClass="btn-danger" text="EXIT">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="25.0" right="50.0" />
+               </HBox.margin>
+               <graphic>
+                  <MaterialDesignIconView glyphName="CLOSE" size="24" wrappingWidth="30.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
