@@ -85,7 +85,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.github.franckyi.cmpdl.CMPDL</mainClass>
+                            <mainClass>com.github.franckyi.cmpdl.CMPDLApp</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -135,19 +135,39 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.github.franckyi</groupId>
+            <artifactId>jcursemeta</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.franckyi</groupId>
+            <artifactId>mvcjfx</artifactId>
+            <version>0.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.franckyi</groupId>
+            <artifactId>builderfx</artifactId>
+            <version>0.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.franckyi</groupId>
+            <artifactId>builderfx-jfoenix</artifactId>
+            <version>0.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.franckyi</groupId>
+            <artifactId>builderfx-fontawesomefx</artifactId>
+            <version>0.0.2</version>
+        </dependency>
+        <dependency>
             <groupId>com.jfoenix</groupId>
             <artifactId>jfoenix</artifactId>
-            <version>8.0.4</version>
+            <version>8.0.7</version>
         </dependency>
         <dependency>
             <groupId>de.jensd</groupId>
             <artifactId>fontawesomefx</artifactId>
             <version>8.9</version>
-        </dependency>
-        <dependency>
-            <groupId>org.jsoup</groupId>
-            <artifactId>jsoup</artifactId>
-            <version>1.11.3</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
